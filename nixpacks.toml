@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["php", "php83Extensions.curl", "php83Extensions.mbstring", "php83Extensions.openssl"]
+
+[phases.build]
+cmds = ["echo 'Build done'"]
+
+[start]
+cmd = "php -S 0.0.0.0:$PORT"
